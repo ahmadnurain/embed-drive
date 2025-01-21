@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Drive Video</title>
+    <style>
+      /* CSS untuk memastikan iframe video full screen */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Hilangkan scroll jika ada */
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Penuhi lebar layar */
+        height: 100vh; /* Penuhi tinggi layar */
+        border: none; /* Hilangkan border iframe */
+      }
+    </style>
   </head>
   <body>
-    <h1>Google Drive Video</h1>
-    <div style="text-align: center">
-      <iframe src="https://drive.google.com/file/d/1nUfqZlWcLU7eCSftuY2mi9EHNlXKEwAT/preview" width="640" height="480" allow="autoplay" frameborder="0"> </iframe>
-    </div>
+    <!-- Video Google Drive -->
+    <iframe src="https://drive.google.com/file/d/1nUfqZlWcLU7eCSftuY2mi9EHNlXKEwAT/preview" allow="autoplay"> </iframe>
   </body>
 </html>
